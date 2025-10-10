@@ -1,0 +1,21 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.font-inter {
+    font-family: "Inter", sans-serif;
+}
+
+.linear {
+    background: linear-gradient(90deg, rgba(99, 46, 227, 1) 0%, rgba(159, 98, 242, 1) 100%);
+}
+
+.text-linear {
+    display: inline-block;
+    background: linear-gradient(to right, #632EE3 0%, #9F62F2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
