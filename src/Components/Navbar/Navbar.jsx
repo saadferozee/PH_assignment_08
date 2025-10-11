@@ -5,7 +5,7 @@ import { FaGithub } from "react-icons/fa";
 const Navbar = () => {
     return (
         <div className=''>
-            <div className="navbar bg-base-100 shadow-sm px-[5%]">
+            <div className="navbar bg-base-100 shadow-lg shadow-[#00000010] dark:shadow-lg dark:shadow-[#ffffff20] px-[5%]">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

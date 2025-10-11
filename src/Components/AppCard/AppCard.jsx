@@ -1,32 +1,23 @@
 import React from 'react';
 import { LuDownload } from "react-icons/lu";
 import { FaStar } from "react-icons/fa";
+import { Navigate, useNavigate } from 'react-router';
+import FixingNumber from '../../Functions/FixingNumber';
 
-const fixingNumber = (number) => {
-    if (number > 999999999) {
-        const convertedToB = number / 1000000000;
-        const addedLetterB = convertedToB.toFixed(0) + 'B';
-        return addedLetterB;
-    } else if (number > 999999) {
-        const convertedToM = number / 1000000;
-        const addedLetterM = convertedToM.toFixed(0) + 'M';
-        return addedLetterM;
-    } else {
-        const convertedToK = number / 1000;
-        const addedLetterK = convertedToK.toFixed(0) + 'K';
-        return addedLetterK;
-    }
-} 
-
-const AppCard = ({appData}) => {
-    const {image, title, downloads, ratingAvg } = appData;
-
-    const downloadNumberFixed = fixingNumber(downloads);
-
+const AppCard = ({ appData }) => {
+    
+    const { id, image, title, downloads, ratingAvg } = appData;
+    
+    const downloadNumberFixed = FixingNumber(downloads, 0);
+    
+    const navigate = useNavigate();
+    const handleClickOnCard = (id) => navigate(`/apps/${id}`);
+    
     return (
-        <div 
-            className='border border-[#00000010] bg-[#ffffff40] shadow-xl w-full rounded-sm p-[16px] hover:cursor-pointer hover:scale-105 hover:shadow-2xl transition-transform duration-500'
-            title='Click to show details'    
+        <div
+            className='border border-[#00000010] bg-[#ffffff40] shadow-xl w-full rounded-sm p-[16px] flex flex-col justify-between hover:cursor-pointer hover:scale-105 hover:shadow-2xl transition-transform duration-400'
+            title='Click to show details'
+            onClick={() => handleClickOnCard(id)}
         >
             <img className='rounded-sm' src={image} alt="" />
             <h1 className='my-3'>{title}</h1>

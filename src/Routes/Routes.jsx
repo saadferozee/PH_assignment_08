@@ -5,7 +5,6 @@ import Root from '../Pages/Root/Root';
 import Home from '../Pages/Home/Home';
 import Apps from '../Pages/Apps/Apps';
 import Installations from '../Pages/Installations/Installations';
-import ShowApps from '../Components/ShowApps/ShowApps';
 import AppData from '../Pages/AppData/AppData';
 
 
@@ -22,11 +21,12 @@ const router = createBrowserRouter([
             {
                 path: 'apps', 
                 loader: () => fetch('/app-data.json'),
-                Component: Apps,
-                children: [
-                    {index: true, Component: Apps},
-                    {path: 'apps/:appId', Component: AppData}
-                ]
+                Component: Apps
+            },
+            {
+                path: 'apps/:appId',
+                loader: ({params}) => fetch('/app-data.json').then(data => data.json()).then(data => data.find( item => item.id == params.appId)),
+                Component: AppData
             },
             {path: 'installations', Component: Installations}
         ]
