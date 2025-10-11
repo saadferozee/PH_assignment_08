@@ -13,7 +13,7 @@ const Loading = () => {
                 color='#9f62f2'
                 loading={loading}
                 cssOverride={''}
-                size={50}
+                size={100}
                 aria-label="Loading Spinner"
                 data-testid="loader"
                 speedMultiplier={0.7}

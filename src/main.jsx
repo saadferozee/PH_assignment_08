@@ -5,6 +5,7 @@ import App from './App.jsx'
 
 import router from './Routes/Routes.jsx';
 import { RouterProvider } from 'react-router';
+import Loading from './Pages/Loading/Loading.jsx';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
