@@ -1,7 +1,7 @@
 [
     {
         "image": "https://images-eds-ssl.xboxlive.com/image?url=4rt9.lXDC4H_93laV1_eHHFT949fUipzkiFOBH3fAiZZUCdYojwUyX2aTonS1aIwMrx6NUIsHfUHSLzjGJFxxjLA80kau9tjXOxhlZk5VV8yIn9919ayS_kGLap0pnWOnsbyvpz17.2xWHZPCf23t0lxwgX1qlzgj46hOzcZzxk-&format=source",
-        "title": "Notion",
+        "title": "Notion: Notes & Workspace",
         "companyName": "Notion Labs Inc.",
         "id": 1,
         "description": "Notion combines notes, tasks, databases, and wikis into a single workspace designed for ultimate flexibility. It allows users to organize their work and personal life through fully customizable pages and templates. Teams can collaborate in real time, embed documents, and manage projects with Kanban boards or tables. The app also supports offline mode and syncs seamlessly across devices. Its minimal design keeps your workflow clutter-free while providing deep functionality for productivity power users. Whether you're managing a startup, planning a trip, or tracking habits, Notion adapts to your needs.",
@@ -34,7 +34,7 @@
     },
     {
         "image": "https://images-eds-ssl.xboxlive.com/image?url=4rt9.lXDC4H_93laV1_eHHFT949fUipzkiFOBH3fAiZZUCdYojwUyX2aTonS1aIwMrx6NUIsHfUHSLzjGJFxxse7.Wc7GeKniGIu50cCCVCa7RmJXDce4W.si.MvoifjhhXhDOtYsvTkqja6jVRBZDt_gPzDwwdSFSiouW2inDw-&format=source",
-        "title": "Todoist",
+        "title": "Todoist: Task Manager",
         "companyName": "Doist Ltd.",
         "id": 2,
         "description": "Todoist helps users capture and organize tasks with clarity and precision. It features natural language input, smart scheduling, and intuitive project organization. Each task can include labels, priorities, and due dates to create an actionable plan for your day. With seamless integrations across Google Calendar, Slack, and email clients, Todoist ensures you never miss a deadline. The Karma productivity tracker provides gentle motivation by rewarding consistent progress. Whether managing personal chores or professional projects, Todoist transforms chaos into order through simplicity and focus.",
@@ -67,7 +67,7 @@
     },
     {
         "image": "https://play-lh.googleusercontent.com/Tt-6ZaQDUAjfSNSeLz4XyYkPsEQfVVp0lBtwrnuyqubhCna0LKu5OZxKgegBJIrEhz8",
-        "title": "Trello",
+        "title": "Trello: Team Projects",
         "companyName": "Atlassian",
         "id": 3,
         "description": "Trello visualizes work using boards, lists, and cards that mirror real-life workflows. Each project can be broken into clear steps with drag-and-drop simplicity. It’s ideal for both individuals and teams who want to plan, collaborate, and execute efficiently. The app supports labels, checklists, attachments, and automation through Butler commands. Integrations with Slack, Google Drive, and Jira enhance its flexibility. Trello’s visual layout reduces mental load and helps users focus on progress rather than complexity. It’s widely used for agile workflows, content planning, and event management.",
@@ -100,7 +100,7 @@
     },
     {
         "image": "https://play-lh.googleusercontent.com/NWRVVF6zXvmcqspJwdFOKcQG6OlsNwpMOxED_DgB6B2BBDeWwAeWZKZxGhgqU0LQVJU",
-        "title": "Forest",
+        "title": "Forest: Focus Timer",
         "companyName": "Seekrtech",
         "id": 4,
         "description": "Forest gamifies focus by letting users grow virtual trees while staying off their phones. When you set a timer and resist distractions, your tree flourishes. If you leave the app to scroll social media, the tree withers. Over time, these trees form a digital forest that represents your productivity. The app also partners with real-world tree-planting organizations, turning your focus into positive environmental impact. With relaxing sounds and a beautiful interface, Forest makes deep work both rewarding and mindful. It’s perfect for students and professionals alike.",
@@ -133,7 +133,7 @@
     },
     {
         "image": "https://play-lh.googleusercontent.com/C-K5UKRddgrCjKne5DsBBXVfp7B1AqJcZwTt5eJt4_b4Hl5rt3tJqNarf6X-5K2pLw",
-        "title": "Clockify",
+        "title": "Clockify: Time Tracker",
         "companyName": "COING Inc.",
         "id": 5,
         "description": "Clockify is a powerful time-tracking tool built for individuals and teams. It allows users to log hours, manage billable projects, and analyze productivity through detailed reports. The interface is clean and simple, minimizing friction while tracking work. Teams can view time usage patterns, measure efficiency, and optimize workflows. Clockify integrates with major project management platforms like Asana, Trello, and Jira. It’s ideal for freelancers, agencies, and businesses who want to monitor progress and manage time accountability without complexity or cost.",
@@ -166,7 +166,7 @@
     },
     {
         "image": "https://play-lh.googleusercontent.com/QJObxznpklAxDNp0OVe3kAP5ZfUouIvRDO0kPj-V3MRjoRYKwj9RVTxOwG9yrlY-bgG3",
-        "title": "Evernote",
+        "title": "Evernote: Notes Organizer",
         "companyName": "Evernote Corporation",
         "id": 6,
         "description": "Evernote is a digital note-taking powerhouse that helps you capture ideas, web pages, and to-do lists in one place. It supports image attachments, document scanning, and cloud sync across devices. Tags and notebooks keep everything organized while its search engine can even read handwriting. The app’s web clipper lets users save articles and simplify them for later reading. Evernote transforms scattered thoughts into structured information, making it an essential tool for writers, researchers, and professionals managing complex data.",
@@ -199,7 +199,7 @@
     },
     {
         "image": "https://play-lh.googleusercontent.com/PH-2iORSfQs-iizoHzePXBaJCXml443pgoC14-lZESLFIp78A4SvxLKUVv1FyIQFtC8",
-        "title": "Microsoft To Do",
+        "title": "Microsoft To Do: Daily Planner",
         "companyName": "Microsoft Corporation",
         "id": 7,
         "description": "Microsoft To Do simplifies task management with smart suggestions, daily planners, and seamless sync with Outlook. It’s perfect for both individual and work-related tasks. The interface is intuitive and supports shared lists, reminders, and notes under each task. Its ‘My Day’ feature helps prioritize important work by resetting your task view each morning. Microsoft To Do encourages focus without clutter, integrating tightly with Microsoft 365 to enhance collaboration for professional users.",
@@ -232,7 +232,7 @@
     },
     {
         "image": "https://play-lh.googleusercontent.com/9bJoeaPbGTB8Tz_h4N-p-6ReRd8vSS-frZb2tmJulaGIoTKElKj3zpmcFJvnS96ANZP5",
-        "title": "Google Keep",
+        "title": "Google Keep: Quick Notes",
         "companyName": "Google LLC",
         "id": 8,
         "description": "Google Keep offers a lightweight yet effective way to capture thoughts, checklists, and voice notes instantly. The color-coded cards keep everything visually organized, while labels and reminders enhance usability. Syncing with Google Drive ensures your notes are accessible across devices. It’s ideal for quick ideas, grocery lists, or study notes. Collaboration features allow sharing with others, making it a versatile tool for both personal and professional productivity. Its minimal interface prioritizes speed and simplicity over complexity.",
@@ -265,7 +265,7 @@
     },
     {
         "image": "https://play-lh.googleusercontent.com/9U1Zbu7jlryfcgwvWHulHzjlgMVjOy_S4rIATrF0b6Qd_VR_5yftp0dQBfi-Q5Psjg",
-        "title": "ClickUp",
+        "title": "ClickUp: Project Management",
         "companyName": "Mango Technologies, Inc.",
         "id": 9,
         "description": "ClickUp centralizes tasks, docs, goals, and chat into one unified platform. Designed for teams that want flexibility, it adapts to agile, waterfall, or custom workflows. Each workspace can include subtasks, dependencies, recurring reminders, and time tracking. The goal-tracking dashboard provides a visual overview of progress and productivity trends. Its automation tools eliminate repetitive actions, letting teams focus on high-impact work. With integrations for Slack, GitHub, and Google Workspace, ClickUp replaces multiple apps with one system of productivity truth.",
@@ -298,7 +298,7 @@
     },
     {
         "image": "https://play-lh.googleusercontent.com/SWbS8z3NqFVHCEQc_6l-ZDdDj5qPGrWSK8hEWRSPHYm9s8958y6nTnoLolVHXlgKfXw",
-        "title": "Asana",
+        "title": "Asana: Work Management",
         "companyName": "Asana, Inc.",
         "id": 10,
         "description": "Asana helps teams organize work and track progress from start to finish. Each project can be broken down into tasks, subtasks, and milestones with clear deadlines. Its timeline view provides a visual representation of project flow, while dashboards track workload and productivity. Teams can comment, attach files, and assign ownership to maintain accountability. Asana’s automation and app integrations reduce manual coordination, ensuring clarity across complex projects. From marketing teams to software developers, it streamlines collaboration and accelerates results.",
@@ -331,7 +331,7 @@
     },
     {
         "image": "https://play-lh.googleusercontent.com/mzJpTCsTW_FuR6YqOPaLHrSEVCSJuXzCljdxnCKhVZMcu6EESZBQTCHxMh8slVtnKqo",
-        "title": "Slack",
+        "title": "Slack: Team Communication",
         "companyName": "Slack Technologies LLC",
         "id": 11,
         "description": "Slack is a communication and collaboration hub designed to eliminate email clutter. It organizes messages into channels for projects, teams, or topics, making conversations searchable and transparent. Integrations with apps like Google Drive, Asana, and Zoom bring all work into one place. Its threaded messaging, huddles, and workflow automation enhance real-time collaboration. Slack transforms how organizations communicate by keeping everything focused, organized, and instantly accessible across platforms and devices.",
@@ -364,7 +364,7 @@
     },
     {
         "image": "https://play-lh.googleusercontent.com/tCojEbNBb3EP9mS6BCoyhmLcJIP9yNWy_k5xyDbEheAjlTAHdN4w4G0X2BZnzxo_rg=w480-h960-rw",
-        "title": "RescueTime",
+        "title": "RescueTime: Time Management",
         "companyName": "RescueTime, Inc.",
         "id": 12,
         "description": "RescueTime automatically tracks your computer activity to show where your time goes. It categorizes websites and applications, generating detailed reports on productivity trends. Users can set focus goals and block distracting sites during deep work sessions. The dashboard offers visual insights into how much time is spent on focused tasks versus distractions. This data-driven approach helps professionals identify inefficiencies and regain control of their time. RescueTime is ideal for freelancers, students, and teams seeking to optimize work habits and balance.",
@@ -396,8 +396,8 @@
         ]
     },
     {
-        "image": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/31/13/63/311363b1-af05-a110-2224-69092e8f4d30/AppIcon-0-0-1x_U007epad-0-11-0-0-85-220.png/1200x630wa.png",
-        "title": "Focus To-Do",
+        "image": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/bd/2f/5c/bd2f5c3a-bc8c-3bab-094b-ffdf0be1215c/AppIcon-0-0-85-220-0-0-4-0-2x.png/1200x630bb.png",
+        "title": "Focus To-Do: Pomodoro Timer & Task Manager",
         "companyName": "Pomodoro Timer & To Do List",
         "id": 13,
         "description": "Focus To-Do merges Pomodoro time management with task tracking. It allows users to create task lists, set priorities, and work in focused intervals separated by short breaks. Progress tracking charts visualize daily performance, helping you stay consistent. The app’s reward system motivates users to maintain focus streaks. It’s suitable for students, writers, and professionals who struggle with procrastination. Cloud sync ensures your data is backed up and accessible across devices. Its clean interface reduces distractions and enhances discipline.",
@@ -430,7 +430,7 @@
     },
     {
         "image": "https://img.icons8.com/color/480/google-calendar--v2.png",
-        "title": "Google Calendar",
+        "title": "Google Calendar: Calender App",
         "companyName": "Google LLC",
         "id": 14,
         "description": "Google Calendar simplifies scheduling by merging meetings, reminders, and events across multiple accounts. Its intuitive interface allows drag-and-drop planning and integrates deeply with Gmail and Google Meet. Users can share calendars for collaboration or create color-coded views to separate work and personal life. Smart suggestions automatically detect meeting times and add events based on your habits. The app syncs instantly across all devices, ensuring you never miss a commitment. It’s a must-have tool for anyone managing a busy schedule.",
@@ -463,7 +463,7 @@
     },
     {
         "image": "https://play-lh.googleusercontent.com/b1-MIBjlMD9kvl0Okeglm9BL9ejRpOXMio303W0tiLb8Ul5WuVzBDoDKgGRcALOsCdw",
-        "title": "Dropbox",
+        "title": "Dropbox: Cloud Storage & File Sharing",
         "companyName": "Dropbox, Inc.",
         "id": 15,
         "description": "Dropbox is a trusted cloud storage solution for secure file syncing and sharing. It allows users to back up documents, photos, and videos with automatic version control. Shared folders simplify team collaboration, while smart sync saves space by storing files online until needed. Its integrated PDF viewer and document scanner enhance productivity for mobile users. Dropbox also supports offline access, ensuring reliability in every environment. Known for stability and security, it remains a cornerstone for digital professionals.",
@@ -496,7 +496,7 @@
     },
     {
         "image": "https://play-lh.googleusercontent.com/js9LcEDMPaWBLW-kX6zrCxVwKDKTsvQRgIubQnZB0wQs4NfNcxPkNlXQOpIDXKX0y5Y",
-        "title": "Habitica",
+        "title": "Habitica: Habit Tracker",
         "companyName": "HabitRPG, Inc.",
         "id": 16,
         "description": "Habitica turns habit tracking into a role-playing game where your daily goals become quests. Completing real-life tasks earns rewards and levels up your character. Missing habits damages your in-game health, making productivity engaging and fun. The app includes community challenges, pets, and items that keep motivation high. By merging behavioral psychology with game design, Habitica makes self-improvement sustainable. It’s a favorite for users who enjoy gamification as a way to build better routines and accountability.",
@@ -529,7 +529,7 @@
     },
     {
         "image": "https://images.toolfinder.co/tools/454/logo/ticktick-logo.png",
-        "title": "TickTick",
+        "title": "TickTick: To-Do List & Task Manager",
         "companyName": "Appest Inc.",
         "id": 17,
         "description": "TickTick combines to-do lists, habit tracking, and calendar integration in one polished interface. Tasks can be organized by projects, tags, and due dates with recurring reminders. Its built-in Pomodoro timer encourages focused work sessions. Users can review daily progress using beautiful productivity charts. The app syncs instantly across all devices, ensuring no task slips through the cracks. TickTick strikes a balance between power and simplicity, making it a favorite among professionals and students.",
@@ -562,7 +562,7 @@
     },
     {
         "image": "https://play-lh.googleusercontent.com/Kv6IIya1TLiCSQCHOz1ihsxuBfSeriuVd8Qpsgby6RFjiWzIJeTnoOWEzHwzttHlhmGM",
-        "title": "Airtable",
+        "title": "Airtable: Spreadsheet Meets Database",
         "companyName": "Airtable, Inc.",
         "id": 18,
         "description": "Airtable bridges the gap between spreadsheets and databases, offering flexible organization for teams of any size. Users can store structured data such as content calendars, inventory lists, or project timelines with drag-and-drop ease. Custom views like Kanban, gallery, or grid make visualization simple. Airtable’s automation and app integrations transform repetitive workflows into efficient systems. It’s widely used in marketing, product development, and event planning due to its adaptability and collaborative features.",
@@ -595,7 +595,7 @@
     },
     {
         "image": "https://play-lh.googleusercontent.com/zVNXJttU2hCZQtdhQHrMHbQx7zbh7ganOE6YPbE0KypiTXNhgEcP4cP2NMz7cCln4Q",
-        "title": "Monday.com",
+        "title": "Monday.com: Team Collaboration",
         "companyName": "Monday.com Ltd.",
         "id": 19,
         "description": "Monday.com provides a customizable visual platform for managing projects and teams. Each board can be tailored with columns for timelines, priorities, and statuses. Automations streamline repetitive actions, while dashboards show project performance in real time. Its intuitive drag-and-drop system makes it easy to plan complex workflows. Integrations with Slack, Gmail, and Zoom enhance collaboration. From startups to enterprises, Monday.com improves transparency, communication, and delivery speed across departments.",
@@ -628,7 +628,7 @@
     },
     {
         "image": "https://play-lh.googleusercontent.com/ge5zQUIC3wtNC4larGLM9RGMn3hIXe8teFjGcBr44Ccip5-6skDWLhdfF_-nypAay3mM",
-        "title": "TimeBloc",
+        "title": "TimeBloc: Time-Blocking Planner",
         "companyName": "Forus Labs",
         "id": 20,
         "description": "TimeBloc is a time-blocking app that transforms your calendar into a structured schedule. It helps users allocate fixed time slots to tasks, reducing decision fatigue and improving focus. With drag-and-drop simplicity, you can design your ideal day and visualize how your time is distributed. Color-coded blocks make it easy to distinguish between work, rest, and personal time. Analytics provide insight into how consistently you follow your plan. TimeBloc is ideal for users who prefer structured daily routines over traditional to-do lists.",

@@ -5,24 +5,30 @@ import Root from '../Pages/Root/Root';
 import Home from '../Pages/Home/Home';
 import Apps from '../Pages/Apps/Apps';
 import Installations from '../Pages/Installations/Installations';
-import ShowApps from '../Pages/ShowApps/ShowApps';
+import ShowApps from '../Components/ShowApps/ShowApps';
 import AppData from '../Pages/AppData/AppData';
+
 
 const router = createBrowserRouter([
     {
         path: '/',
         Component: Root,
         children: [
-            {index: true, Component: Home},
-            {path: 'installations', Component: Installations},
+            {
+                index: true,
+                loader: () => fetch('/app-data.json'),
+                Component: Home
+            },
             {
                 path: 'apps', 
-                Component: ShowApps,
+                loader: () => fetch('/app-data.json'),
+                Component: Apps,
                 children: [
                     {index: true, Component: Apps},
                     {path: 'apps/:appId', Component: AppData}
                 ]
-            }
+            },
+            {path: 'installations', Component: Installations}
         ]
     }
 ])

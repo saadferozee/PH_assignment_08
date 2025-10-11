@@ -65,9 +65,9 @@
 
 #### Banner
 
-- Must contain a center-aligned heading, text, and two buttons.
-- “App Store” button will redirect to the App Store.
-- “Play Store” button will redirect to the Play Store.
+- Must contain a center-aligned heading, text, and two buttons. ✅
+- “App Store” button will redirect to the App Store. ✅
+- “Play Store” button will redirect to the Play Store. ✅
 
 #### States Section
 
