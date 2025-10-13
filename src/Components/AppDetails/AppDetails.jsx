@@ -1,16 +1,25 @@
-import React from 'react';
+import React, { useContext, useState } from 'react';
 import FixingNumber from '../../Functions/FixingNumber';
 import Chart from '../Chart/Chart';
 import { LuDownload } from "react-icons/lu";
 import { FaStar } from "react-icons/fa";
 import { MdRateReview } from "react-icons/md";
 
+import { InstalledContext } from '../../Hooks/Installed/Installed';
+
 const AppDetails = ({ appDetailsData }) => {
 
-    const { image, title, companyName, downloads, ratingAvg, reviews, size, ratings, description } = appDetailsData;
+    const { id, image, title, companyName, downloads, ratingAvg, reviews, size, ratings, description } = appDetailsData;
+    const {installed, setInstalled} = useContext(InstalledContext);
 
-    const handleInstallButton = () => {
-        console.log('Install Button Clicked');
+    // const localData = JSON.parse(localStorage.getItem('installedAppsId')) || {ids: []};
+    
+    const [buttonDisable, setButtonDisable] = useState(installed.includes(id));
+
+    const handleInstallButton = (id) => {
+        localStorage.setItem('installedAppsId', JSON.stringify({ids: [...installed, id]}))
+        setInstalled([...installed, id])
+        setButtonDisable(true);
     }
 
     return (
@@ -48,7 +57,18 @@ const AppDetails = ({ appDetailsData }) => {
                             <h2 className='font-bold text-[50px] opacity-75'>{FixingNumber(reviews, 0)}</h2>
                         </div>
                     </div>
-                    <button className='btn btn-accent w-fit mb-1 px-[30px] text-lg font-light' onClick={handleInstallButton}>Install Now ({size}MB)</button>
+                    <button 
+                        className='btn w-fit mb-1 px-[30px] text-lg font-light' 
+                        style={ buttonDisable ? {
+                            backgroundColor: '#00e0c650'
+                        } : {
+                            backgroundColor: '#00e0c6'
+                        }}
+                        onClick={() => handleInstallButton(id)}
+                        disabled={buttonDisable}
+                    >{
+                        buttonDisable ? 'Installed' : 'Install Now'
+                    } ({size}MB)</button>
                 </div>
             </div>
             <hr className='my-12 opacity-25' />
