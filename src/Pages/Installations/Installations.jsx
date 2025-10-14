@@ -26,7 +26,7 @@ const Installations = () => {
                     <option>Velvet</option>
                 </select>
             </div>
-            <div className='mx-[5%] border grid grid-cols-1 gap-3.5'>
+            <div className='mx-[5%] grid grid-cols-1 gap-3.5'>
                 {
                     alreadyInstalled.map(installedApp => <InstalledAppCard key={installedApp.id} installedApp={installedApp} setInstalled={setInstalled}></InstalledAppCard>)
                 }

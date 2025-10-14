@@ -7,7 +7,7 @@ const Error = () => {
             <img src={'/assets/error-404.png'} alt="404 Error" />
             <h1 className='font-semibold text-5xl'>Oops, Page Not Found !</h1>
             <h5 className='font-light opacity-70'>The page you are looking for is not available.</h5>
-            <button className='linear btn py-[10px] px-[40px] font-extralight text-xl'><NavLink to={'/'}>Go Back !</NavLink></button>
+            <button className='linear btn py-[10px] px-[40px] font-extralight text-xl text-white'><NavLink to={'/'}>Go Back !</NavLink></button>
         </div>
     );
 };

@@ -58,11 +58,12 @@ const AppDetails = ({ appDetailsData }) => {
                         </div>
                     </div>
                     <button 
-                        className='btn w-fit mb-1 px-[30px] text-lg font-light' 
+                        className='btn w-fit mb-1 px-[30px] text-lg font-light text-white text-shadow-lg' 
                         style={ buttonDisable ? {
-                            backgroundColor: '#00e0c650'
+                            backgroundColor: '#00e0c670'
                         } : {
-                            backgroundColor: '#00e0c6'
+                            backgroundColor: '#00e0c6',
+                            cursor: 'pointer'
                         }}
                         onClick={() => handleInstallButton(id)}
                         disabled={buttonDisable}

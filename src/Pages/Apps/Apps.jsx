@@ -1,15 +1,12 @@
-import React, { useContext, useState } from 'react';
+import React, { useState } from 'react';
 import ShowApps from '../../Components/ShowApps/ShowApps';
 import { useLoaderData } from 'react-router';
 
-import { InstalledContext } from '../../Hooks/Installed/Installed';
+// import { InstalledContext } from '../../Hooks/Installed/Installed';
 
 import { IoSearchOutline } from "react-icons/io5";
 
 const Apps = () => {
-
-    const { installed} = useContext(InstalledContext);
-    console.log(installed);
 
     const appsData = useLoaderData();
 

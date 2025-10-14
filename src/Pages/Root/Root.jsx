@@ -9,7 +9,6 @@ import { InstalledContext } from '../../Hooks/Installed/Installed';
 const Root = () => {
 
     const localInstall = JSON.parse(localStorage.getItem('installedAppsId')) || {ids: []};
-    console.log(localInstall);
     const [installed, setInstalled] = useState(localInstall.ids);
 
     const { state } = useNavigation();

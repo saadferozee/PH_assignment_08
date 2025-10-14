@@ -1,7 +1,7 @@
 import React from 'react';
 import { LuDownload } from "react-icons/lu";
 import { FaStar } from "react-icons/fa";
-import { Navigate, useNavigate } from 'react-router';
+import { useNavigate } from 'react-router';
 import FixingNumber from '../../Functions/FixingNumber';
 
 const AppCard = ({ appData }) => {
@@ -19,7 +19,7 @@ const AppCard = ({ appData }) => {
             title='Click to show details'
             onClick={() => handleClickOnCard(id)}
         >
-            <img className='rounded-sm' src={image} alt="" />
+            <img className='rounded-sm' src={image} alt={`${title} image`} />
             <h1 className='my-3'>{title}</h1>
             <div className='w-full flex justify-between'>
                 <h4 className='bg-[#00d39030] text-[#00d390] rounded-sm flex items-center gap-1 px-2 font-semibold'><LuDownload /> {downloadNumberFixed}</h4>
