@@ -7,17 +7,27 @@ import { MdRateReview } from "react-icons/md";
 
 import { InstalledContext } from '../../Hooks/Installed/Installed';
 
+import { ToastContainer, toast } from "react-toastify";
+
+const Msg = ({ closeToast, toastProps }) => (
+    <div>
+        <button onClick={()=> toast(Msg)}>Retry</button>
+        <button onClick={closeToast}>Close</button>
+    </div>
+);
+
 const AppDetails = ({ appDetailsData }) => {
 
     const { id, image, title, companyName, downloads, ratingAvg, reviews, size, ratings, description } = appDetailsData;
-    const {installed, setInstalled} = useContext(InstalledContext);
+    const { installed, setInstalled } = useContext(InstalledContext);
 
     // const localData = JSON.parse(localStorage.getItem('installedAppsId')) || {ids: []};
-    
+
     const [buttonDisable, setButtonDisable] = useState(installed.includes(id));
 
     const handleInstallButton = (id) => {
-        localStorage.setItem('installedAppsId', JSON.stringify({ids: [...installed, id]}))
+        toast(Msg);
+        localStorage.setItem('installedAppsId', JSON.stringify({ ids: [...installed, id] }))
         setInstalled([...installed, id])
         setButtonDisable(true);
     }
@@ -57,9 +67,9 @@ const AppDetails = ({ appDetailsData }) => {
                             <h2 className='font-bold text-[50px] opacity-75'>{FixingNumber(reviews, 0)}</h2>
                         </div>
                     </div>
-                    <button 
-                        className='btn w-fit mb-1 px-[30px] text-lg font-light text-white text-shadow-lg' 
-                        style={ buttonDisable ? {
+                    <button
+                        className='btn w-fit mb-1 px-[30px] text-lg font-light text-white text-shadow-lg'
+                        style={buttonDisable ? {
                             backgroundColor: '#00e0c670'
                         } : {
                             backgroundColor: '#00e0c6',
@@ -67,9 +77,9 @@ const AppDetails = ({ appDetailsData }) => {
                         }}
                         onClick={() => handleInstallButton(id)}
                         disabled={buttonDisable}
-                    >{
-                        buttonDisable ? 'Installed' : 'Install Now'
-                    } ({size}MB)</button>
+                    >
+                        {buttonDisable ? 'Installed' : `Install Now  󠀠 (${size} MB)`}
+                    </button>
                 </div>
             </div>
             <hr className='my-12 opacity-25' />
@@ -79,6 +89,7 @@ const AppDetails = ({ appDetailsData }) => {
                 <h2 className='ml-[2%] mb-5 font-semibold text-3xl'>Description</h2>
                 <p className='opacity-60 text-xl text-justify' >{description}</p>
             </div>
+            <ToastContainer />
         </div>
     );
 };

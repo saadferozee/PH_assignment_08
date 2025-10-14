@@ -5,6 +5,7 @@ import { useLoaderData } from 'react-router';
 // import { InstalledContext } from '../../Hooks/Installed/Installed';
 
 import { IoSearchOutline } from "react-icons/io5";
+import AppError from '../AppError/AppError';
 
 const Apps = () => {
 
@@ -45,7 +46,9 @@ const Apps = () => {
                 </form>
             </div>
             <div className='mx-[5%] '>
-                <ShowApps appsData={filteredAppsData}></ShowApps>
+                {
+                    filteredAppsData.length === 0 ? <AppError></AppError> : <ShowApps appsData={filteredAppsData}></ShowApps>
+                }
             </div>
         </div>
     );
