@@ -14,7 +14,7 @@ const Installations = () => {
     return (
         <div className='my-16'>
             <div className='mb-[40px] text-center'>
-                <h1 className='font-bold text-[40px]'>Our All Applications</h1>
+                <h1 className='font-bold text-[40px]'>Your Installed Apps</h1>
                 <p className='font-light opacity-65'>Explore All Apps on the Market developed by us. We code for Millions</p>
             </div>
             <div className='mx-[5%] mb-5 flex justify-between'>
