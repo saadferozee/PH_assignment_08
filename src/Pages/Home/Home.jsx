@@ -7,7 +7,7 @@ import { NavLink, useLoaderData } from 'react-router';
 const Home = () => {
 
     const allAppsData = useLoaderData();
-    const trendingAppsData = allAppsData.filter(appsData => appsData.id <= 8);
+    const trendingAppsData = allAppsData.filter(appsData => appsData.id <= 10);
 
     return (
         <div className='py-[60px] text-center'>

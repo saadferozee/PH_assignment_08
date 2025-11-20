@@ -7,31 +7,31 @@ import { MdRateReview } from "react-icons/md";
 
 import { InstalledContext } from '../../Hooks/Installed/Installed';
 
-import { ToastContainer, toast } from "react-toastify";
-
-const Msg = ({ closeToast }) => (
-    <>
-        <span>Successfully Installed</span>
-        <br />
-        {/* <button className='btn' onClick={()=> toast(Msg)}>Retry</button> */}
-        <button className='btn h-fit ml-auto py-0.5 ' onClick={closeToast}>Close</button>
-    </>
-);
+import { Slide, ToastContainer, toast } from "react-toastify";
 
 const AppDetails = ({ appDetailsData }) => {
 
     const { id, image, title, companyName, downloads, ratingAvg, reviews, size, ratings, description } = appDetailsData;
     const { installed, setInstalled } = useContext(InstalledContext);
-
     // const localData = JSON.parse(localStorage.getItem('installedAppsId')) || {ids: []};
 
     const [buttonDisable, setButtonDisable] = useState(installed.includes(id));
 
     const handleInstallButton = (id) => {
-        toast(Msg);
         localStorage.setItem('installedAppsId', JSON.stringify({ ids: [...installed, id] }))
         setInstalled([...installed, id])
         setButtonDisable(true);
+        toast.success('App Installed Successfully', {
+            position: "top-center",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: false,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "colored",
+            transition: Slide,
+        });
     }
 
     return (
@@ -91,7 +91,19 @@ const AppDetails = ({ appDetailsData }) => {
                 <h2 className='ml-[2%] mb-5 font-semibold text-3xl'>Description</h2>
                 <p className='opacity-60 text-xl text-justify' >{description}</p>
             </div>
-            <ToastContainer />
+            <ToastContainer
+                position="top-center"
+                autoClose={5000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick={false}
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+                theme="colored"
+                transition={Slide}
+            />
         </div>
     );
 };

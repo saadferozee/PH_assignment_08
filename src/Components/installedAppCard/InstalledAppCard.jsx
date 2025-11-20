@@ -3,6 +3,7 @@ import FixingNumber from '../../Functions/FixingNumber';
 
 import { LuDownload } from "react-icons/lu";
 import { FaStar } from "react-icons/fa";
+import { Bounce, toast, ToastContainer } from 'react-toastify';
 
 const InstalledAppCard = ({ installedApp, setInstalled }) => {
 
@@ -13,23 +14,49 @@ const InstalledAppCard = ({ installedApp, setInstalled }) => {
         const updateInstalledApps = local.filter(appId => appId !== id);
         localStorage.setItem('installedAppsId', JSON.stringify({ ids: updateInstalledApps }));
         setInstalled([...updateInstalledApps]);
+        toast.warn('Uninstalled Successfully', {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: false,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+            transition: Bounce,
+        });
     }
 
     return (
-        <div className='border border-[#00000010] rounded bg-[#ffffff40] shadow-lg p-[16px] flex justify-between items-center hover:cursor-pointer hover:scale-101 hover:shadow-2xl transition-transform duration-400'>
-            <div className='flex gap-4'>
-                <img className='w-[65px] rounded-sm' src={installedApp.image} alt="app image" />
-                <div className='flex flex-col justify-around'>
-                    <h1 className='font-semibold text-lg'>{installedApp.title}</h1>
-                    <div className='flex gap-6 items-center'>
-                        <h4 className='flex items-center gap-1.5 text-[#00d390]'><LuDownload /> {FixingNumber(downloads, 0)}</h4>
-                        <h4 className='flex items-center gap-1.5 text-[#ff8811]'><FaStar /> {ratingAvg}</h4>
-                        <h4 className='opacity-55'>{size} MB</h4>
+        <>
+            <div className='border border-[#00000010] rounded bg-[#ffffff40] shadow-lg p-[16px] flex justify-between items-center hover:cursor-pointer hover:scale-101 hover:shadow-2xl transition-transform duration-400'>
+                <div className='flex gap-4'>
+                    <img className='w-[65px] rounded-sm' src={installedApp.image} alt="app image" />
+                    <div className='flex flex-col justify-around'>
+                        <h1 className='font-semibold text-lg'>{installedApp.title}</h1>
+                        <div className='flex gap-6 items-center'>
+                            <h4 className='flex items-center gap-1.5 text-[#00d390]'><LuDownload /> {FixingNumber(downloads, 0)}</h4>
+                            <h4 className='flex items-center gap-1.5 text-[#ff8811]'><FaStar /> {ratingAvg}</h4>
+                            <h4 className='opacity-55'>{size} MB</h4>
+                        </div>
                     </div>
                 </div>
+                <button className='btn btn-neutral border-none bg-[#00d390] text-shadow-xs text-white' onClick={() => handleUninstallButton(id)}>Uninstall</button>
             </div>
-            <button className='btn btn-neutral border-none bg-[#00d390] text-shadow-xs text-white' onClick={() => handleUninstallButton(id)}>Uninstall</button>
-        </div>
+            <ToastContainer
+                position="top-right"
+                autoClose={5000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick={false}
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+                theme="light"
+                transition={Bounce}
+            />
+        </>
     );
 };
 

@@ -31,6 +31,7 @@ const Installations = () => {
     
     useEffect(() => {
         setSortedData(alreadyInstalled)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     },[installed, allAppData]);
 
     return (
@@ -44,12 +45,12 @@ const Installations = () => {
                 <select
                     defaultValue="Sort by Size"
                     onChange={(e) => handleSort(e.target.value)}
-                    className="select select-sm w-[15%] border rounded-sm px-3.5 py-1.5 border-[#00000050] dark:border-[#ffffff50] font-light"
+                    className="select select-sm w-fit border rounded-sm px-3.5 py-1.5 border-[#00000050] dark:border-[#ffffff50] font-light"
                 >
                     <option disabled={true}>Sort by Download ({sort ? sort : ''})</option>
-                    <option>Sort by Installation Date</option>
-                    <option>Downloads: Low to High</option>
-                    <option>Downloads: High to Low</option>
+                    <option>Sort by Installation Date {'ㅤㅤㅤㅤㅤㅤㅤ'}</option>
+                    <option>Downloads: Low to High {'ㅤㅤㅤㅤㅤㅤㅤ'}</option>
+                    <option>Downloads: High to Low {'ㅤㅤㅤㅤㅤㅤㅤ'}</option>
                 </select>
             </div>
             <div className='mx-[5%] grid grid-cols-1 gap-3.5'>

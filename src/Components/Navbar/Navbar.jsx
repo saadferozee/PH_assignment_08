@@ -22,7 +22,7 @@ const Navbar = () => {
                     <NavLink to={'/'} className="text-linear text-2xl font-extrabold">
                         <button className='flex gap-2.5 items-center'>
                             <img className='w-10' src="/assets/logo.png" alt="Logo" />
-                            <span>HERO.IO</span>
+                            <span className='w-fit'>HERO.IO</span>
                         </button>
                     </NavLink>
                 </div>
@@ -81,7 +81,7 @@ const Navbar = () => {
                         </NavLink>
                     </div>
                 </div>
-                <div className="navbar-end gap-[16px]">
+                <div className="navbar-end hidden sm:flex gap-[16px]">
                     <a href="https://github.com/saadferozee"><button className="linear rounded-[8px] px-[20px] py-[10px] flex gap-2 font-bold text-white"><FaGithub className='my-auto' /><span> Contribute</span></button></a>
                 </div>
             </div>
