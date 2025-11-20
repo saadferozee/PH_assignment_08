@@ -9,11 +9,13 @@ import { InstalledContext } from '../../Hooks/Installed/Installed';
 
 import { ToastContainer, toast } from "react-toastify";
 
-const Msg = ({ closeToast, toastProps }) => (
-    <div>
-        <button onClick={()=> toast(Msg)}>Retry</button>
-        <button onClick={closeToast}>Close</button>
-    </div>
+const Msg = ({ closeToast }) => (
+    <>
+        <span>Successfully Installed</span>
+        <br />
+        {/* <button className='btn' onClick={()=> toast(Msg)}>Retry</button> */}
+        <button className='btn h-fit ml-auto py-0.5 ' onClick={closeToast}>Close</button>
+    </>
 );
 
 const AppDetails = ({ appDetailsData }) => {
